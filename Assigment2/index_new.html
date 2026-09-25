@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Blakletterpress Website Template</title>
+	
+	<!-- BỔ SUNG: Nên thêm thẻ meta description để tối ưu SEO cơ bản. Google thường dùng thẻ này để làm đoạn mô tả hiển thị trên kết quả tìm kiếm -->
+	<meta name="description" content="Mô tả tóm tắt nội dung trang web của bạn tại đây để tăng tỷ lệ click (CTR).">
+	
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="page">
+		<!-- 
+			TRƯỚC KHI SỬA: <div id="header">
+			LỖI: Thẻ div không mang ý nghĩa ngữ nghĩa. Bot tìm kiếm không biết đây là phần đầu trang.
+			SAU KHI SỬA: Dùng thẻ <header>. Thẻ này xác định rõ vùng chứa logo, tiêu đề và điều hướng chính của trang.
+		-->
+		<header id="header">
+			<div id="motto">
+				<a href="index.html" class="sitename"><img src="images/blakletterpress.png" height="24" width="142" alt="SiteName"></a>
+				<p>
+					<img src="images/header-text.png" height="14" width="218" alt="Text">
+				</p>
+			</div>
+			<div id="logo">
+				<a href="index.html"><img src="images/logo.png" alt="LOGO"></a>
+			</div>
+			<div id="searchbar">
+				<form action="#" method="post">
+					<input type="text" value="Enter search query" class="txtfield" onBlur="javascript:if(this.value==''){this.value=this.defaultValue;}" onFocus="javascript:if(this.value==this.defaultValue){this.value='';}">
+					<input type="submit" value="Search" class="btn">
+				</form>
+			</div>
+		</header>
+		
+		<div id="contents">
+			<!-- 
+				TRƯỚC KHI SỬA: <div id="main">
+				LỖI: Nội dung trọng tâm của trang nằm trong một thẻ div chung chung.
+				SAU KHI SỬA: Dùng thẻ <main>. Thẻ này báo cho công cụ tìm kiếm biết đây là vùng nội dung cốt lõi, quan trọng nhất của trang, giúp lập chỉ mục nội dung chính xác hơn. Lưu ý: Mỗi trang chỉ nên có duy nhất 1 thẻ <main>.
+			-->
+			<main id="main">
+				<!-- 
+					TRƯỚC KHI SỬA: <div id="gallery">
+					LỖI: Dùng thẻ div cho một vùng nội dung độc lập.
+					SAU KHI SỬA: Dùng thẻ <section>. Thẻ này đại diện cho một phần độc lập của tài liệu, thường có chủ đề riêng (ở đây là thư viện ảnh).
+				-->
+				<section id="gallery">
+					<div>
+						<img src="images/team-large.jpg" alt="Img">
+					</div>
+					<ul>
+						<li><img src="images/smiling.jpg" alt="Img"></li>
+						<li><img src="images/ecofriends.jpg" alt="Img"></li>
+						<li><img src="images/team.jpg" alt="Img"></li>
+						<li><img src="images/smiling.jpg" alt="Img"></li>
+						<li><img src="images/ecofriends.jpg" alt="Img"></li>
+						<li><img src="images/team.jpg" alt="Img"></li>
+					</ul>
+				</section>
+
+				<!-- 
+					TRƯỚC KHI SỬA: <div class="body">
+					LỖI: Chứa một bài viết hoàn chỉnh nhưng dùng div.
+					SAU KHI SỬA: Dùng thẻ <article>. Thẻ này cực kỳ tốt cho SEO, nó định nghĩa một nội dung độc lập, khép kín, có thể tái sử dụng hoặc phân phối (ví dụ: một bài blog, một tin tức).
+				-->
+				<article class="body">
+					<h1>This website template has been designed by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a> for you, for <em>free</em>.</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend ligula vel velit varius fermentum. Nullam porta hendrerit metus id hendrerit. Maecenas consequat neque sed tellus commodo ultrices et et est. Maecenas non justo vitae dui vulputate rutrum sed a lacus. Pellentesque dapibus, felis eget ornare ultrices, est est imperdiet magna, id ultrices odio leo sed erat. Maecenas nec est egestas ipsum bibendum iaculis. Nulla accumsan posuere nisl. Cras eu consectetur turpis. Etiam condimentum, lorem ac imperdiet ultricies, velit arcu feugiat nunc, vel tristique sapien diam quis velit. Maecenas non metus augue, sit amet tristique libero. In placerat urna quis orci hendrerit pretium. Donec luctus, magna rhoncus pretium tempor, odio orci consequat turpis, id rutrum elit tellus eu odio. Nunc sapien libero, faucibus quis vehicula quis, interdum eu mauris.
+					</p>
+					<p>
+						Cras eu consectetur turpis. Etiam condimentum, lorem ac imperdiet ultricies, velit arcu feugiat nunc, vel tristique sapien diam quis velit. Maecenas non metus augue, sit amet tristique libero. In placerat urna quis orci hendrerit pretium. Donec luctus, magna rhoncus pretium tempor, odio orci consequat turpis, id rutrum elit tellus eu odio. Nunc sapien libero, faucibus quis vehicula quis, interdum eu mauris.
+					</p>
+				</article>
+			</main>
+			
+			<!-- 
+				TRƯỚC KHI SỬA: <div id="sidebar">
+				LỖI: Cột bên (sidebar) chứa nội dung phụ trợ nhưng lại dùng div.
+				SAU KHI SỬA: Dùng thẻ <aside>. Thẻ này báo hiệu cho máy đọc (screen reader) và bot tìm kiếm rằng nội dung bên trong chỉ mang tính chất bổ sung, liên quan gián tiếp đến nội dung chính.
+			-->
+			<aside id="sidebar">
+				<!-- 
+					TRƯỚC KHI SỬA: <div id="navigation">
+					LỖI: Cụm liên kết điều hướng chính dùng thẻ div.
+					SAU KHI SỬA: Dùng thẻ <nav>. Thẻ này xác định đây là tập hợp các liên kết điều hướng quan trọng nhất của trang.
+				-->
+				<nav id="navigation">
+					<div>
+						<ul>
+							<li class="selected">
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="about.html">About</a>
+							</li>
+							<li>
+								<a href="news.html">News</a>
+							</li>
+							<li>
+								<a href="blog.html">Blog</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				
+				<!-- 
+					TRƯỚC KHI SỬA: <div class="section">
+					LỖI: Các khối chức năng ở sidebar đang dùng div.
+					SAU KHI SỬA: Chuyển thành <section> để tạo khối cấu trúc ngữ nghĩa rõ ràng hơn cho từng phần của thanh bên.
+				-->
+				<section class="section">
+					<div id="connect">
+						<h2>Connect with us:</h2>
+						<a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter"></a> <a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook"></a> <a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus"></a>
+					</div>
+				</section>
+				
+				<section class="section">
+					<div id="posts">
+						<h2>Placeholder</h2>
+						<ul>
+							<li>
+								<h5>Title Sample One</h5>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend ligula vel velit varius
+								</p>
+								<a href="news.html" class="more">Read more</a>
+							</li>
+							<li>
+								<h5>Title Sample One</h5>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend ligula vel velit varius
+								</p>
+								<a href="news.html" class="more">Read more</a>
+							</li>
+						</ul>
+						<a href="news.html" class="btn2">View More</a>
+					</div>
+				</section>
+			</aside>
+		</div>
+		
+		<!-- 
+			TRƯỚC KHI SỬA: <div id="footer">
+			LỖI: Phần chân trang dùng div.
+			SAU KHI SỬA: Dùng thẻ <footer>. Thẻ này chứa thông tin bản quyền, liên hệ hoặc các liên kết phụ ở cuối trang, giúp cấu trúc trang web trở nên hoàn thiện hơn.
+		-->
+		<footer id="footer">
+			<div>
+				<ul id="featured">
+					<li>
+						<a href="index.html" class="home"></a>
+						<p>
+							This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+						</p>
+					</li>
+					<li>
+						<a href="index.html" class="bell"></a>
+						<p>
+							This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+						</p>
+					</li>
+					<li>
+						<a href="index.html" class="globe"></a>
+						<p>
+							This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+						</p>
+					</li>
+					<li>
+						<a href="index.html" class="pencil"></a>
+						<p>
+							This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+						</p>
+					</li>
+				</ul>
+				<p id="footnote">
+					© Copyright © 2011.Company name all rights reserved
+				</p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
