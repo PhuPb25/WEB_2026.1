@@ -1,4 +1,3 @@
-// Component SearchForm: nhận từ khóa và gửi lên App thông qua Props.
 (function () {
   const h = React.createElement;
 

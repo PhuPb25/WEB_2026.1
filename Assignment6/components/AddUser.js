@@ -1,4 +1,3 @@
-// Component AddUser: quản lý form thêm người dùng bằng useState.
 (function () {
   const h = React.createElement;
 
@@ -17,8 +16,6 @@
 
     function handleChange(event) {
       const { id, value } = event.target;
-
-      // Các trường street, suite, city thuộc đối tượng address.
       if (["street", "suite", "city"].includes(id)) {
         setUser({
           ...user,
@@ -34,7 +31,6 @@
         alert("Vui lòng nhập Name và Username!");
         return;
       }
-
       onAdd(user);
       setUser(emptyUser());
       setAdding(false);
@@ -58,7 +54,6 @@
               "aria-label": "Đóng"
             }, "×")
           ),
-
           h("div", { className: "form-grid" },
             h("label", null, "Name *",
               h("input", { id: "name", value: user.name, onChange: handleChange, placeholder: "Họ và tên" })
@@ -85,7 +80,6 @@
               h("input", { id: "website", value: user.website, onChange: handleChange, placeholder: "example.com" })
             )
           ),
-
           h("div", { className: "modal-actions" },
             h("button", { className: "btn btn-secondary", type: "button", onClick: () => setAdding(false) }, "Hủy"),
             h("button", { className: "btn btn-primary", type: "button", onClick: handleAdd }, "Thêm")
