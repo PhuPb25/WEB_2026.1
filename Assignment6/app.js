@@ -1,4 +1,3 @@
-// Component gốc App: tập trung state dùng chung và truyền dữ liệu qua Props.
 function App() {
   const [kw, setKeyword] = React.useState("");
   const [newUser, setNewUser] = React.useState(null);
