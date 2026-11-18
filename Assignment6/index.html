@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quản lý người dùng - React CRUD</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- React và ReactDOM được nạp trực tiếp từ CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <!-- Babel cho phép trình duyệt hiểu JSX trong app.js -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- Các component được nạp theo thứ tự trước App -->
+  <script src="components/SearchForm.js"></script>
+  <script src="components/AddUser.js"></script>
+  <script src="components/ResultTable.js"></script>
+  <script type="text/babel" data-presets="env,react" src="app.js"></script>
+</body>
+</html>
